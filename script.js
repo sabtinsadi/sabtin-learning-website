@@ -8,3 +8,14 @@ function trackClick() {
     });
   }
 }
+function trackFormSubmit(event) {
+  event.preventDefault();
+
+  if (typeof gtag === "function") {
+    gtag("event", "contact_form_submit", {
+      form_name: "Contact Form"
+    });
+  }
+
+  alert("Contact Form Submitted!");
+}
