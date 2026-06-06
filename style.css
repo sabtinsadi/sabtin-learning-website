@@ -1,105 +1,145 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The AIMS | Software, Website & Web Application Development</title>
+  <meta name="description" content="The AIMS provides professional software development, website development, web application development, maintenance and IT services." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-body {
-  background: #f4f7fb;
-  color: #222;
-}
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">The <span>AIMS</span></div>
 
-.hero {
-  min-height: 70vh;
-  background: linear-gradient(135deg, #1a73e8, #0f9d58);
-  color: white;
-  padding: 25px 8%;
-}
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    <a href="#contact" class="nav-btn">Get Quote</a>
+  </nav>
+</header>
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+<section id="home" class="hero">
+  <div class="hero-content">
+    <span class="tagline">Automated Interface Management System</span>
+    <h1>Professional Software, Website & Web Application Development</h1>
+    <p>
+      We build secure, scalable and modern digital solutions for businesses, 
+      including websites, web applications, custom software, maintenance and IT services.
+    </p>
 
-.hero-content {
-  margin-top: 120px;
-  max-width: 650px;
-}
+    <div class="hero-buttons">
+      <a href="#services" class="btn primary">Explore Services</a>
+      <a href="#contact" class="btn secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
 
-.hero-content h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
-}
+<section class="stats">
+  <div>
+    <h3>100%</h3>
+    <p>Responsive Design</p>
+  </div>
+  <div>
+    <h3>24/7</h3>
+    <p>Support Ready</p>
+  </div>
+  <div>
+    <h3>SEO</h3>
+    <p>Friendly Structure</p>
+  </div>
+  <div>
+    <h3>Secure</h3>
+    <p>Modern Code</p>
+  </div>
+</section>
 
-.hero-content p {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
+<section id="services" class="section">
+  <div class="section-title">
+    <span>Our Services</span>
+    <h2>Digital Solutions for Modern Businesses</h2>
+    <p>We provide complete development and maintenance services to grow your business online.</p>
+  </div>
 
-button {
-  background: #ffcc00;
-  border: none;
-  padding: 14px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Software Development</h3>
+      <p>Custom business software for automation, management, reporting and workflow optimization.</p>
+    </div>
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  padding: 60px 8%;
-}
+    <div class="service-card">
+      <h3>Website Development</h3>
+      <p>Corporate, portfolio, landing page, business and ecommerce websites with professional UI.</p>
+    </div>
 
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
+    <div class="service-card">
+      <h3>Web Application</h3>
+      <p>Dashboard, admin panel, database system, user login, booking system and SaaS platforms.</p>
+    </div>
 
-.card h3 {
-  color: #1a73e8;
-  margin-bottom: 12px;
-}
+    <div class="service-card">
+      <h3>Maintenance & Support</h3>
+      <p>Bug fixing, speed optimization, security updates, backup, redesign and technical support.</p>
+    </div>
+  </div>
+</section>
 
-.contact {
-  padding: 60px 8%;
-  background: white;
-}
+<section id="process" class="section process">
+  <div class="section-title">
+    <span>Work Process</span>
+    <h2>How We Work</h2>
+  </div>
 
-.contact h2 {
-  margin-bottom: 20px;
-}
+  <div class="process-grid">
+    <div>
+      <h3>01. Planning</h3>
+      <p>We understand your business, goals, features and technical requirements.</p>
+    </div>
+    <div>
+      <h3>02. Design</h3>
+      <p>We create a clean, modern and user-friendly interface for your project.</p>
+    </div>
+    <div>
+      <h3>03. Development</h3>
+      <p>We develop your system using clean, responsive and scalable code.</p>
+    </div>
+    <div>
+      <h3>04. Launch & Support</h3>
+      <p>We deploy your project and provide maintenance support after delivery.</p>
+    </div>
+  </div>
+</section>
 
-form {
-  max-width: 500px;
-  display: grid;
-  gap: 15px;
-}
+<section id="contact" class="section contact">
+  <div class="contact-box">
+    <div>
+      <span>Contact Us</span>
+      <h2>Start Your Project With The AIMS</h2>
+      <p>
+        Need a website, software, web application or maintenance service?
+        Send us your project details.
+      </p>
+    </div>
 
-input, textarea {
-  padding: 14px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Service Needed" />
+      <textarea placeholder="Project Details"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
-textarea {
-  min-height: 120px;
-}
+<footer>
+  <p>© 2026 The AIMS — Automated Interface Management System. All Rights Reserved.</p>
+</footer>
 
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #222;
-  color: white;
-}
+<script src="script.js"></script>
+</body>
+</html>
