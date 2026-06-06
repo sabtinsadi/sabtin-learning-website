@@ -1,145 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The AIMS | Software, Website & Web Application Development</title>
-  <meta name="description" content="The AIMS provides professional software development, website development, web application development, maintenance and IT services." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-<header class="header">
-  <nav class="navbar">
-    <div class="logo">The <span>AIMS</span></div>
+body {
+  background: #f8fafc;
+  color: #1e293b;
+}
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+.header {
+  background: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    <a href="#contact" class="nav-btn">Get Quote</a>
-  </nav>
-</header>
+.navbar {
+  width: 90%;
+  margin: auto;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-<section id="home" class="hero">
-  <div class="hero-content">
-    <span class="tagline">Automated Interface Management System</span>
-    <h1>Professional Software, Website & Web Application Development</h1>
-    <p>
-      We build secure, scalable and modern digital solutions for businesses, 
-      including websites, web applications, custom software, maintenance and IT services.
-    </p>
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
 
-    <div class="hero-buttons">
-      <a href="#services" class="btn primary">Explore Services</a>
-      <a href="#contact" class="btn secondary">Contact Us</a>
-    </div>
-  </div>
-</section>
+.logo span {
+  color: #38bdf8;
+}
 
-<section class="stats">
-  <div>
-    <h3>100%</h3>
-    <p>Responsive Design</p>
-  </div>
-  <div>
-    <h3>24/7</h3>
-    <p>Support Ready</p>
-  </div>
-  <div>
-    <h3>SEO</h3>
-    <p>Friendly Structure</p>
-  </div>
-  <div>
-    <h3>Secure</h3>
-    <p>Modern Code</p>
-  </div>
-</section>
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
 
-<section id="services" class="section">
-  <div class="section-title">
-    <span>Our Services</span>
-    <h2>Digital Solutions for Modern Businesses</h2>
-    <p>We provide complete development and maintenance services to grow your business online.</p>
-  </div>
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  <div class="services-grid">
-    <div class="service-card">
-      <h3>Software Development</h3>
-      <p>Custom business software for automation, management, reporting and workflow optimization.</p>
-    </div>
+.nav-links a:hover {
+  color: #38bdf8;
+}
 
-    <div class="service-card">
-      <h3>Website Development</h3>
-      <p>Corporate, portfolio, landing page, business and ecommerce websites with professional UI.</p>
-    </div>
+.nav-btn {
+  background: #38bdf8;
+  color: #020617;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+}
 
-    <div class="service-card">
-      <h3>Web Application</h3>
-      <p>Dashboard, admin panel, database system, user login, booking system and SaaS platforms.</p>
-    </div>
+.hero {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.85)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72") center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  color: white;
+}
 
-    <div class="service-card">
-      <h3>Maintenance & Support</h3>
-      <p>Bug fixing, speed optimization, security updates, backup, redesign and technical support.</p>
-    </div>
-  </div>
-</section>
+.hero-content {
+  max-width: 850px;
+}
 
-<section id="process" class="section process">
-  <div class="section-title">
-    <span>Work Process</span>
-    <h2>How We Work</h2>
-  </div>
+.tagline,
+.section-title span,
+.contact-box span {
+  color: #38bdf8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-  <div class="process-grid">
-    <div>
-      <h3>01. Planning</h3>
-      <p>We understand your business, goals, features and technical requirements.</p>
-    </div>
-    <div>
-      <h3>02. Design</h3>
-      <p>We create a clean, modern and user-friendly interface for your project.</p>
-    </div>
-    <div>
-      <h3>03. Development</h3>
-      <p>We develop your system using clean, responsive and scalable code.</p>
-    </div>
-    <div>
-      <h3>04. Launch & Support</h3>
-      <p>We deploy your project and provide maintenance support after delivery.</p>
-    </div>
-  </div>
-</section>
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  margin: 18px 0;
+}
 
-<section id="contact" class="section contact">
-  <div class="contact-box">
-    <div>
-      <span>Contact Us</span>
-      <h2>Start Your Project With The AIMS</h2>
-      <p>
-        Need a website, software, web application or maintenance service?
-        Send us your project details.
-      </p>
-    </div>
+.hero p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  max-width: 720px;
+}
 
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="text" placeholder="Service Needed" />
-      <textarea placeholder="Project Details"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
+.hero-buttons {
+  margin-top: 32px;
+  display: flex;
+  gap: 18px;
+}
 
-<footer>
-  <p>© 2026 The AIMS — Automated Interface Management System. All Rights Reserved.</p>
-</footer>
+.btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.secondary {
+  border: 1px solid #38bdf8;
+  color: white;
+}
+
+.stats {
+  width: 85%;
+  margin: -55px auto 70px;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+.stats div {
+  padding: 35px;
+  text-align: center;
+  border-right: 1px solid #e2e8f0;
+}
+
+.stats h3 {
+  font-size: 34px;
+  color: #0284c7;
+}
+
+.stats p {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+.section {
+  padding: 85px 10%;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 750px;
+  margin: auto auto 55px;
+}
+
+.section-title h2,
+.contact-box h2 {
+  font-size: 42px;
+  margin: 12px 0;
+  color: #020617;
+}
+
+.section-title p,
+.contact-box p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.services-grid,
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-card,
+.process-grid div {
+  background: white;
+  padding: 35px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.service-card:hover,
+.process-grid div:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3,
+.process-grid h3 {
+  color: #020617;
+  margin-bottom: 15px;
+}
+
+.service-card p,
+.process-grid p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.process {
+  background: #eef6ff;
+}
+
+.contact-box {
+  background: #020617;
+  color: white;
+  padding: 60px;
+  border-radius: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.contact-box h2 {
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  height: 130px;
+}
+
+button {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 16px;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  background: #020617;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 24px;
+}
+
+@media (max-width: 992px) {
+  .services-grid,
+  .process-grid,
+  .stats,
+  .contact-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 18px 0;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    padding: 80px 7%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .services-grid,
+  .process-grid,
+  .stats,
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    margin-top: 30px;
+  }
+
+  .contact-box {
+    padding: 35px;
+  }
+}
