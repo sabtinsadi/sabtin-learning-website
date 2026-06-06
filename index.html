@@ -1,67 +1,255 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AIMS | Automated Interface Management System</title>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VVNELRRL68"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="description" content="The AIMS provides Software Development, Website Development, Web Applications, Maintenance and IT Services.">
 
-  gtag('config', 'G-VVNELRRL68');
-</script>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Learning Website</title>
-
-  <!-- Google Analytics code paste here later -->
-
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <h2>My Learning Website</h2>
-      <a href="#contact">Contact</a>
+
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            The <span>AIMS</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-btn">Get Quote</a>
     </nav>
+</header>
+
+<section class="hero" id="home">
     <div class="hero-content">
-      <h1>Welcome to My Free Website</h1>
-      <p>A simple website for learning Google Analytics, SEO, and digital marketing.</p>
-      <button onclick="trackClick()">Get Started</button>
-    </div>
-  </header>
 
-  <section class="cards">
-    <div class="card">
-      <h3>Google Analytics</h3>
-      <p>Track visitors, sessions, traffic sources, and events.</p>
-    </div>
-    <div class="card">
-      <h3>SEO Practice</h3>
-      <p>Learn keywords, page titles, meta descriptions, and organic traffic.</p>
-    </div>
-    <div class="card">
-      <h3>Digital Marketing</h3>
-      <p>Practice Facebook Ads, Google Ads, CTR, CPC, and campaigns.</p>
-    </div>
-  </section>
+        <span class="tagline">
+            Automated Interface Management System
+        </span>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form onsubmit="trackFormSubmit(event)">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form">
-  </section>
+        <h1>
+            Professional Software, Website & Web Application Development
+        </h1>
 
-  <footer>
-    <p>© 2026 My Learning Website. All rights reserved.</p>
-  </footer>
+        <p>
+            The AIMS delivers modern software solutions, professional websites,
+            web applications, maintenance services and digital transformation
+            solutions for businesses worldwide.
+        </p>
 
-  <script src="script.js"></script>
+        <div class="hero-buttons">
+            <a href="#services" class="btn primary">
+                Explore Services
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats">
+
+    <div>
+        <h3>100%</h3>
+        <p>Responsive Design</p>
+    </div>
+
+    <div>
+        <h3>24/7</h3>
+        <p>Support Service</p>
+    </div>
+
+    <div>
+        <h3>SEO</h3>
+        <p>Optimized Structure</p>
+    </div>
+
+    <div>
+        <h3>Secure</h3>
+        <p>Modern Development</p>
+    </div>
+
+</section>
+
+<section class="section" id="services">
+
+    <div class="section-title">
+        <span>Our Services</span>
+
+        <h2>
+            Complete Digital Development Solutions
+        </h2>
+
+        <p>
+            We help startups, businesses and organizations build scalable
+            digital products and online platforms.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Software Development</h3>
+
+            <p>
+                Custom software solutions designed to automate business
+                operations and improve productivity.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Website Development</h3>
+
+            <p>
+                Modern corporate websites, portfolios, ecommerce platforms
+                and business websites.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Application Development</h3>
+
+            <p>
+                Advanced dashboards, management systems, portals and
+                cloud-based applications.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Maintenance & Support</h3>
+
+            <p>
+                Continuous monitoring, updates, security improvements,
+                backups and technical support.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section process" id="process">
+
+    <div class="section-title">
+        <span>Work Process</span>
+
+        <h2>
+            How We Deliver Projects
+        </h2>
+    </div>
+
+    <div class="process-grid">
+
+        <div>
+            <h3>01. Requirement Analysis</h3>
+
+            <p>
+                Understanding your business objectives and project goals.
+            </p>
+        </div>
+
+        <div>
+            <h3>02. Design & Planning</h3>
+
+            <p>
+                Creating user-focused designs and development plans.
+            </p>
+        </div>
+
+        <div>
+            <h3>03. Development</h3>
+
+            <p>
+                Building secure and scalable software using modern technologies.
+            </p>
+        </div>
+
+        <div>
+            <h3>04. Deployment & Support</h3>
+
+            <p>
+                Launching your project and providing ongoing maintenance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+    <div class="contact-box">
+
+        <div>
+
+            <span>Contact Us</span>
+
+            <h2>
+                Let's Build Something Great Together
+            </h2>
+
+            <p>
+                Looking for software development, website development,
+                web application solutions or maintenance services?
+                Contact The AIMS today.
+            </p>
+
+        </div>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="Service Required"
+            >
+
+            <textarea
+                placeholder="Tell us about your project"
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 The AIMS - Automated Interface Management System.
+        All Rights Reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+```
