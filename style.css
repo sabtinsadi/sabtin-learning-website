@@ -50,7 +50,6 @@ body {
   color: #e2e8f0;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -65,22 +64,17 @@ body {
   text-decoration: none;
   font-weight: 800;
   box-shadow: 0 0 25px rgba(56,189,248,0.45);
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  transform: translateY(-3px);
 }
 
 .hero {
-  min-height: 92vh;
+  min-height: 100vh;
   background:
     radial-gradient(circle at top right, rgba(56,189,248,0.25), transparent 30%),
     linear-gradient(rgba(2, 6, 23, 0.86), rgba(2, 6, 23, 0.9)),
     url("https://images.unsplash.com/photo-1497366754035-f200968a6e72") center/cover;
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: 140px 10% 190px;
   color: white;
 }
 
@@ -106,14 +100,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shineText 3s linear infinite, floatText 2.8s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(56, 189, 248, 0.65);
 }
 
 .hero h1 {
   font-size: 66px;
   line-height: 1.12;
   margin: 24px 0;
-  letter-spacing: -1px;
 }
 
 .hero p {
@@ -124,9 +116,11 @@ body {
 }
 
 .hero-buttons {
-  margin-top: 38px;
+  margin-top: 45px;
   display: flex;
   gap: 18px;
+  position: relative;
+  z-index: 10;
 }
 
 .btn {
@@ -134,13 +128,11 @@ body {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 800;
-  transition: 0.3s;
 }
 
 .primary {
   background: linear-gradient(135deg, #38bdf8, #0ea5e9);
   color: #020617;
-  box-shadow: 0 0 30px rgba(56,189,248,0.4);
 }
 
 .secondary {
@@ -148,19 +140,17 @@ body {
   color: white;
 }
 
-.btn:hover {
-  transform: translateY(-4px);
-}
-
 .stats {
   width: 85%;
-  margin: -55px auto 75px;
-  background: rgba(255,255,255,0.95);
+  margin: -90px auto 75px;
+  background: rgba(255,255,255,0.97);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border-radius: 22px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.16);
   overflow: hidden;
+  position: relative;
+  z-index: 5;
 }
 
 .stats div {
@@ -217,8 +207,8 @@ body {
   padding: 38px 30px;
   border-radius: 20px;
   box-shadow: 0 14px 35px rgba(0,0,0,0.08);
-  transition: 0.35s;
   border: 1px solid #e2e8f0;
+  transition: 0.35s;
 }
 
 .service-card:hover,
@@ -256,7 +246,6 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 45px;
   align-items: center;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.22);
 }
 
 .contact-box h2 {
@@ -278,12 +267,6 @@ textarea {
   font-size: 15px;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #38bdf8;
-  box-shadow: 0 0 18px rgba(56,189,248,0.35);
-}
-
 textarea {
   height: 135px;
 }
@@ -296,11 +279,6 @@ button {
   font-weight: 900;
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  transform: translateY(-3px);
 }
 
 footer {
@@ -362,7 +340,7 @@ footer {
   }
 
   .hero {
-    padding: 85px 7%;
+    padding: 120px 7% 150px;
   }
 
   .tagline {
@@ -390,7 +368,7 @@ footer {
   }
 
   .stats {
-    margin-top: 30px;
+    margin-top: -60px;
   }
 
   .contact-box {
