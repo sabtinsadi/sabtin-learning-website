@@ -1,21 +1,9 @@
-function trackClick() {
-  alert("Button clicked! You can track this event in Google Analytics later.");
+const form = document.querySelector("form");
 
-  if (typeof gtag === "function") {
-    gtag("event", "get_started_click", {
-      event_category: "button",
-      event_label: "Get Started Button"
-    });
-  }
-}
-function trackFormSubmit(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  if (typeof gtag === "function") {
-    gtag("event", "contact_form_submit", {
-      form_name: "Contact Form"
-    });
-  }
+  alert("Thank you for contacting The AIMS. We will get back to you soon.");
 
-  alert("Contact Form Submitted!");
-}
+  form.reset();
+});
