@@ -257,9 +257,9 @@ body {
 
 .developer-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 55px;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
   background: #ffffff;
