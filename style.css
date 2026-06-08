@@ -33,14 +33,14 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  overflow: hidden;
 }
 
 .logo img {
-  width: 95px;
-  height: 75px;
+  max-height: 65px;
+  width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 14px rgba(56,189,248,0.55));
+  display: block;
 }
 
 .logo-text {
