@@ -23,21 +23,28 @@ body {
 .navbar {
   width: 90%;
   margin: auto;
-  height: 88px;
+  height: 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Logo Fix */
 .logo {
-  color: white;
-  font-size: 32px;
-  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.logo span {
-  color: #38bdf8;
-  text-shadow: 0 0 20px rgba(56,189,248,0.8);
+.logo img {
+  width: 95px;
+  height: 75px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(56,189,248,0.55));
+}
+
+.logo-text {
+  display: none;
 }
 
 .nav-links {
@@ -325,9 +332,14 @@ footer {
 @media (max-width: 768px) {
   .navbar {
     height: auto;
-    padding: 20px 0;
+    padding: 18px 0;
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
+  }
+
+  .logo img {
+    width: 110px;
+    height: 85px;
   }
 
   .nav-links {
