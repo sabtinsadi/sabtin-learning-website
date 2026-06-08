@@ -29,7 +29,6 @@ body {
   justify-content: space-between;
 }
 
-/* Logo Fix */
 .logo {
   display: flex;
   align-items: center;
@@ -189,7 +188,7 @@ body {
 .section-title {
   text-align: center;
   max-width: 780px;
-  margin: auto auto 60px;
+  margin: auto auto 50px;
 }
 
 .section-title h2,
@@ -245,6 +244,101 @@ body {
 
 .process {
   background: linear-gradient(180deg, #eef6ff, #f8fafc);
+}
+
+/* Developer Section */
+.developer-section {
+  padding: 70px 10% 90px;
+}
+
+.developer-section .section-title {
+  margin-bottom: 35px;
+}
+
+.developer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 26px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.developer-image {
+  flex: 0 0 360px;
+}
+
+.developer-image img {
+  width: 100%;
+  max-width: 360px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 24px;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 18px 45px rgba(56,189,248,0.25);
+  display: block;
+}
+
+.developer-content {
+  flex: 1;
+}
+
+.developer-label {
+  display: inline-block;
+  color: #0284c7;
+  background: #e0f2fe;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.developer-content h3 {
+  font-size: 42px;
+  color: #020617;
+  margin-bottom: 18px;
+}
+
+.developer-info {
+  list-style: none;
+  margin-bottom: 22px;
+}
+
+.developer-info li {
+  color: #475569;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.developer-content p {
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.developer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.developer-skills span {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 9px 14px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .contact-box {
@@ -332,6 +426,25 @@ footer {
   .hero h1 {
     font-size: 46px;
   }
+
+  .developer-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .developer-image {
+    flex: initial;
+  }
+
+  .developer-image img {
+    max-width: 320px;
+    height: 360px;
+    margin: auto;
+  }
+
+  .developer-skills {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -394,6 +507,23 @@ footer {
 
   .section-title h2,
   .contact-box h2 {
+    font-size: 32px;
+  }
+
+  .developer-section {
+    padding: 60px 7%;
+  }
+
+  .developer-box {
+    padding: 28px;
+  }
+
+  .developer-image img {
+    max-width: 280px;
+    height: 320px;
+  }
+
+  .developer-content h3 {
     font-size: 32px;
   }
 }
