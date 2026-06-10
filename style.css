@@ -237,7 +237,7 @@ body {
 /* Developer Section */
 .developer-section {
   padding: 15px 10% 60px;
-  scroll-margin-top: 120px;
+  scroll-margin-top: 10px;
 }
 
 .developer-section .section-title {
